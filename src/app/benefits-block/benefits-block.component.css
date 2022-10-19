@@ -1,0 +1,23 @@
+.row {
+  min-height: 100px;
+}
+.benefit_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit_icon {
+  width: 50px;
+}
+.benefit_icon svg {
+  width: 100%;
+}
+.benefit_text {
+  margin-left: 5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3D5E67;
+}
+

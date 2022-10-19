@@ -1,0 +1,93 @@
+<div class="main_block">
+  <div class="container">
+    <div class="row">
+      <header class="header">
+        <div class="col-2" >
+          <a href="#" class="header__logo">
+            <img src="../../assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="col-5 offset-1">
+          <ul class="menu">
+            <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+            <li class="menu_item"><a href="#" class="menu_link">About</a></li>
+            <li class="menu_item"><a href="#" class="menu_link">Products</a></li>
+            <li class="menu_item"><a href="#" class="menu_link">Cart</a></li>
+            <li class="menu_item"><a href="#" class="menu_link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="#" class="menu_link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.5001 17.5L13.7617 13.755M15.8334 8.74999C15.8334 10.6286 15.0871 12.4303 13.7588 13.7587C12.4304 15.087 10.6287 15.8333 8.75008 15.8333C6.87146 15.8333 5.06979 15.087 3.74141 13.7587C2.41303 12.4303 1.66675 10.6286 1.66675 8.74999C1.66675 6.87137 2.41303 5.0697 3.74141 3.74132C5.06979 2.41293 6.87146 1.66666 8.75008 1.66666C10.6287 1.66666 12.4304 2.41293 13.7588 3.74132C15.0871 5.0697 15.8334 6.87137 15.8334 8.74999V8.74999Z" stroke="#6A6A6A" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="menu_item"><a href="#" class="menu_link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.83341 2.5C3.53258 2.5 1.66675 4.34667 1.66675 6.625C1.66675 8.46417 2.39591 12.8292 9.57341 17.2417C9.70198 17.3199 9.84958 17.3613 10.0001 17.3613C10.1506 17.3613 10.2982 17.3199 10.4267 17.2417C17.6042 12.8292 18.3334 8.46417 18.3334 6.625C18.3334 4.34667 16.4676 2.5 14.1667 2.5C11.8659 2.5 10.0001 5 10.0001 5C10.0001 5 8.13425 2.5 5.83341 2.5Z" stroke="#6A6A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a></li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.16675 5.83334H15.6584C15.8913 5.83335 16.1215 5.88215 16.3344 5.9766C16.5472 6.07104 16.7379 6.20904 16.8941 6.38169C17.0504 6.55434 17.1687 6.75781 17.2415 6.97899C17.3143 7.20017 17.3399 7.43415 17.3167 7.66584L16.8167 12.6658C16.7756 13.0771 16.5832 13.4584 16.2767 13.7357C15.9703 14.0131 15.5717 14.1667 15.1584 14.1667H7.20008C6.81464 14.1668 6.44106 14.0334 6.14295 13.7891C5.84484 13.5447 5.64063 13.2046 5.56508 12.8267L4.16675 5.83334Z" stroke="#6A6A6A" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M4.16675 5.83333L3.49175 3.13083C3.44661 2.95063 3.34254 2.79067 3.19609 2.67638C3.04963 2.56209 2.86919 2.5 2.68341 2.5H1.66675M6.66675 17.5H8.33341M13.3334 17.5H15.0001" stroke="#6A6A6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <div class="header_buttons"  *ngIf="!authority">
+            <button mat-button class="header_button_orange" (click)="openDialog()">
+              <div class="header_button_text">
+                Login
+              </div>
+            </button>
+            <button mat-button class="header_button_blue" (click)="openSignupDialog()">
+              <div class="header_button_text">
+                Sign Up
+              </div>
+            </button>
+          </div>
+          <div class="header_buttons"  *ngIf="authority">
+            <div class=" info me-3"> {{info.username}}  </div>
+            <button mat-button class="header_button_gray" (click)="logout()">
+              <div class="header_button_text">
+                Logout
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="main_block_wrapper">
+
+          <div class="main_block_wrapper_title">
+            Ainaline,<br>
+            <span>with self-love!</span>
+          </div>
+          <div class="main_block_wrapper_subtitle">
+            Skin care is like an aesthetic pleasure<br>
+            <span>
+              From 100% organic ingredients
+            </span>
+
+          </div>
+
+          <button mat-button class="main_block_button">GO TO SHOP</button>
+        </div>
+      </div>
+<!--      <div class="col-6">-->
+<!--        <div class="main_block_img">-->
+<!--          <img src="../../assets/img/main_block_picture.png" alt="">-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </div>
+</div>

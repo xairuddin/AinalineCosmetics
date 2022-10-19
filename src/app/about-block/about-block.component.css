@@ -1,0 +1,42 @@
+.about_block_wrapper {
+  min-height: 650px;
+  background-color: #F4FDFF;
+}
+.about_wrapper {
+  width: 80%;
+  margin-top: 150px;
+  margin-left: 60px;
+}
+.about_title {
+  font-family: 'Rufina', serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #3D5E67;
+}
+.about_text {
+  color: #473E3E;
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.about_button {
+  margin-top: 31px;
+  width: 255px;
+  height: 58px;
+  background: #FCA462;
+  border-radius: 30px 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.about_img {
+  margin-top: 50px;
+  width: 500px;
+}
+.about_img img {
+  width: 100%;
+}

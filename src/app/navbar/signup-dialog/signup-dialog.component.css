@@ -1,0 +1,13 @@
+.header_button_blue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 37px;
+
+  background: #649199;
+  border-radius: 21px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}

@@ -1,0 +1,25 @@
+.header_button_blue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 37px;
+
+  background: #649199;
+  border-radius: 21px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.horizontal-line-text {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #D8DDEC;
+  line-height: 0.1rem;
+  margin: 25px 0 30px 0;
+}
+span {
+  background: white;
+  padding: 0 10px;
+}
+
